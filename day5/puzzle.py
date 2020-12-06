@@ -4,7 +4,10 @@ def parse(lines):
     return lines
 
 
-def solve(data):
+def good_solve(data):
+
+
+def bad_solve(data):
 
     seat_ids = []
 
