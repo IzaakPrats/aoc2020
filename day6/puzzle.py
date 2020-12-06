@@ -3,7 +3,19 @@ def parse(lines):
                ''.join(lines).split('\n\n'))
 
 
-def solve(data):
+def solve_first(data):
+    group_sum = 0
+
+    for group in data:
+        charSet = set()
+        for char in group:
+            charSet.add(char)
+        group_sum += len(charSet)
+
+    return group_sum
+
+
+def solve_second(data):
     group_sum = 0
 
     for group in data:
@@ -21,3 +33,7 @@ def solve(data):
                 group_sum += 1
 
     return group_sum
+
+
+def solve(data):
+    return solve_second(data)
