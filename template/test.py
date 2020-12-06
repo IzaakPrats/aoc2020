@@ -1,11 +1,9 @@
 import puzzle
 
+data = puzzle.parse(file("input.txt").readlines())
 
-def main():
-    data = puzzle.parse(file("input.txt").readlines())
-    answer = puzzle.solve(data)
-    print("ANSWER IS: ", answer)
+first_answer = puzzle.solve_first(data)
+print("FIRST PART ANSWER IS: ", first_answer)
 
-
-if __name__ == '__main__':
-    main()
+second_answer = puzzle.solve_second(data)
+print("SECOND PART ANSWER IS: ", second_answer)

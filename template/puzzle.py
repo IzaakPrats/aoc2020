@@ -2,5 +2,9 @@ def parse(lines):
     return None
 
 
-def solve(data):
+def first_solve(data):
+    return -1
+
+
+def second_solve(data):
     return -1
